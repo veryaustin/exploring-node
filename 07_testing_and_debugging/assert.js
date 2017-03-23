@@ -4,6 +4,7 @@ var fun = require('./mathfun');
 assert.equal(fun.evenDoublerSync(2),4);
 assert.throws(function() {
   fun.evenDoublerSync(3);
+  // Regex searching for "Odd Input"
 },/Odd/);
 
 fun.evenDoubler(2, function(err, results) {
